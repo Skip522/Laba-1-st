@@ -51,6 +51,7 @@ long long next_prime_factor(long long *x) {
 
 int main() {
     long long A, B;    // A и B — заданные числа из условия
+    printf("Соколов Кирилл 090304-РПИа025\n");
     if (scanf("%lld %lld", &A, &B) != 2) 
         return 0;      // если не удалось прочитать два числа — выходим
     
@@ -59,7 +60,7 @@ int main() {
         printf("-1\n");   // тут было "\\n"
         return 0;
     }
-
+    
     long long a = A;   // копия числа A, которую будем разлагать на простые множители
     long long ans = 1; // здесь будем хранить искомое минимальное n
 
@@ -101,3 +102,4 @@ int main() {
     printf("%lld\n", ans);   // тут было "\\n"
     return 0;
 }
+
